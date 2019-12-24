@@ -1,7 +1,9 @@
 import React from 'react';
 
+import './style';
+
 export default ({ title }) => {
     return (
-        <h1>{ title }</h1>
+        <h1 className="app__title">{ title }</h1>
     )
 }

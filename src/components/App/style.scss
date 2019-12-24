@@ -1,4 +1,5 @@
 body {
+    background: linear-gradient(0.50turn, #3f87a6, #afcddb, #fffafa);
     margin: 0;
     padding: 0;
 }
@@ -6,10 +7,50 @@ body {
 .app {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
 
     &__content {
         flex-grow: 1;
     }
+
+    &__button {
+        padding: 10px;
+        width: 100%;
+        display: block;
+        margin: 8px auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #F5624D;
+        transition: 0.3s background-color;
+    }
+
+    &__button:hover {
+        background-color: #CC231E;
+        color: white;
+    }
+
+    &__result-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__table-header {
+        border: 1px solid black;
+    }
+
+    &__result-table {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    &__table-cells {
+        border: 1px solid black;
+        margin: 0;
+    }
+
 }
 
